@@ -1,0 +1,123 @@
+getClients:
+  path:       /clients
+  controller: App\Controller\ClientController::getClients
+  methods:    GET
+
+getClient:
+  path:       /client/{id}
+  controller: App\Controller\ClientController::getClient
+  methods:    GET
+  defaults:
+    id: 1
+
+postClient:
+  path:       /clients
+  controller: App\Controller\ClientController::createClient
+  methods:    POST
+
+patchClient:
+  path:       /client/{id}
+  controller: App\Controller\ClientController::patchClient
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteClient:
+  path:       /client/{id}
+  controller: App\Controller\ClientController::deleteClient
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getRestaurants:
+  path:       /restaurants
+  controller: App\Controller\RestaurantController::getRestaurants
+  methods:    GET
+
+getRestaurant:
+  path:       /restaurant/{id}
+  controller: App\Controller\RestaurantController::getRestaurant
+  methods:    GET
+  defaults:
+    id: 1
+
+postRestaurant:
+  path:       /restaurants
+  controller: App\Controller\RestaurantController::createRestaurant
+  methods:    POST
+
+patchRestaurant:
+  path:       /restaurant/{id}
+  controller: App\Controller\RestaurantController::patchRestaurant
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteRestaurant:
+  path:       /restaurant/{id}
+  controller: App\Controller\RestaurantController::deleteRestaurant
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getDishesByRestaurantId:
+  path:       /restaurant-dishes/{restaurantId}
+  controller: App\Controller\DishController::getDishesByRestaurantId
+  methods:    GET
+
+getDish:
+  path:       /dish/{id}
+  controller: App\Controller\DishController::getDish
+  methods:    GET
+  defaults:
+    id: 1
+
+postDish:
+  path:       /dish
+  controller: App\Controller\DishController::createDish
+  methods:    POST
+
+patchDish:
+  path:       /dish/{id}
+  controller: App\Controller\DishController::patchDish
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteDish:
+  path:       /dish/{id}
+  controller: App\Controller\DishController::deleteDish
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getOrdersByClientId:
+  path:       /client-orders/{clientId}
+  controller: App\Controller\OrderController::getOrdersByClientId
+  methods:    GET
+
+getOrder:
+  path:       /order/{id}
+  controller: App\Controller\OrderController::getOrder
+  methods:    GET
+  defaults:
+    id: 1
+
+postOrder:
+  path:       /order
+  controller: App\Controller\OrderController::createOrder
+  methods:    POST
+
+patchOrder:
+  path:       /order/{id}
+  controller: App\Controller\OrderController::patchOrder
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteOrder:
+  path:       /order/{id}
+  controller: App\Controller\OrderController::deleteOrder
+  methods:    DELETE
+  defaults:
+    id: 1
